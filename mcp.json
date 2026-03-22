@@ -1,0 +1,63 @@
+﻿{
+    "mcpServers":  {
+                       "Sequential Thinking":  {
+                                                   "command":  "npx",
+                                                   "args":  [
+                                                                "-y",
+                                                                "@modelcontextprotocol/server-sequential-thinking"
+                                                            ],
+                                                   "env":  {
+                                                               "NPM_CONFIG_CACHE":  "C:\\PSWK coding team\\exchagerate\\.npm-cache"
+                                                           }
+                                               },
+                       "context7":  {
+                                        "command":  "npx",
+                                        "env":  {
+                                                    "NPM_CONFIG_CACHE":  "C:\\PSWK coding team\\exchagerate\\.npm-cache"
+                                                },
+                                        "args":  [
+                                                     "-y",
+                                                     "@upstash/context7-mcp"
+                                                 ]
+                                    },
+                       "Playwright":  {
+                                          "command":  "npx",
+                                          "env":  {
+                                                      "NPM_CONFIG_CACHE":  "C:\\PSWK coding team\\exchagerate\\.npm-cache",
+                                                      "NPM_CONFIG_OFFLINE":  "true"
+                                                  },
+                                          "args":  [
+                                                       "-y",
+                                                       "@playwright/mcp@latest"
+                                                   ]
+                                      },
+                       "supabase":  {
+                                        "url":  "https://mcp.supabase.com/mcp?project_ref=sefqpupevdbdksknrcvq\u0026features=docs%2Caccount%2Cdatabase%2Cdebugging%2Cdevelopment%2Cfunctions%2Cbranching%2Cstorage",
+                                        "headers":  {
+
+                                                    }
+                                    },
+                       "TalkToFigma":  {
+                                           "command":  "bunx",
+                                           "args":  [
+                                                        "cursor-talk-to-figma-mcp@latest"
+                                                    ]
+                                       },
+                       "pencil":  {
+                                      "name":  "pencil",
+                                      "transport":  "stdio",
+                                      "command":  "c:\\Users\\daum6\\.cursor\\extensions\\highagency.pencildev-0.6.24-universal\\out\\mcp-server-windows-x64.exe",
+                                      "args":  [
+                                                   "--app",
+                                                   "cursor"
+                                               ],
+                                      "env":  {
+
+                                              }
+                                  },
+                                  "shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
+    }
+                   }
+}

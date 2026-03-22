@@ -1,0 +1,239 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: oklch(0.1390 0.0029 246.26);
+  --foreground: oklch(0.9784 0.0011 197.14);
+  --card: oklch(0.2277 0.0057 285.93);
+  --card-foreground: oklch(0.9784 0.0011 197.14);
+  --popover: oklch(0.1723 0.0026 247.98);
+  --popover-foreground: oklch(0.9784 0.0011 197.14);
+  --primary: oklch(0.5674 0.1585 275.21);
+  --primary-foreground: oklch(1.0000 0.0000 89.88);
+  --secondary: oklch(0.2574 0.0056 286.00);
+  --secondary-foreground: oklch(0.8744 0.0152 260.73);
+  --muted: oklch(0.1950 0.0026 247.96);
+  --muted-foreground: oklch(0.6488 0.0146 262.36);
+  --accent: oklch(0.6225 0.2069 278.85);
+  --accent-foreground: oklch(1.0000 0.0000 89.88);
+  --destructive: oklch(0.6534 0.1835 23.68);
+  --destructive-foreground: oklch(1.0000 0.0000 89.88);
+  --border: oklch(0.2645 0.0098 268.31);
+  --input: oklch(0.2645 0.0098 268.31);
+  --ring: oklch(0.5674 0.1585 275.21);
+  --success: 143 69% 49%;
+  --danger: 0 84% 63%;
+  --radius: 0.65rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: "General Sans", "Sora", "Manrope", "Segoe UI", sans-serif;
+}
+
+.display-font {
+  font-family: "General Sans", "Sora", "Space Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.wire-wrap {
+  position: relative;
+  width: 248px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wire-iso-stack {
+  position: absolute;
+  width: 170px;
+  height: 128px;
+  transform: translateY(6px);
+}
+
+.wire-iso-top {
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 134px;
+  height: 72px;
+  border: 1px solid rgba(228, 232, 244, 0.36);
+  border-radius: 12px;
+  transform: rotate(-28deg) skewX(-10deg);
+}
+
+.wire-iso-emblem {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 64px;
+  height: 26px;
+  border: 1px solid rgba(228, 232, 244, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wire-iso-layer {
+  position: absolute;
+  left: 18px;
+  width: 134px;
+  height: 62px;
+  border: 1px solid rgba(228, 232, 244, 0.3);
+  border-radius: 11px;
+  transform: rotate(-28deg) skewX(-10deg);
+}
+
+.wire-iso-layer-a {
+  top: 28px;
+}
+
+.wire-iso-layer-b {
+  top: 46px;
+  opacity: 0.82;
+}
+
+.wire-iso-layer-c {
+  top: 64px;
+  opacity: 0.68;
+}
+
+.wire-iso-layer-d {
+  top: 82px;
+  opacity: 0.56;
+}
+
+.wire-cube-cluster {
+  position: relative;
+  width: 184px;
+  height: 140px;
+}
+
+.wire-iso-cube {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border: 1px solid rgba(228, 232, 244, 0.34);
+  border-radius: 10px;
+  background: #000;
+}
+
+.wire-iso-cube-top {
+  position: absolute;
+  left: 10px;
+  top: -16px;
+  width: 54px;
+  height: 22px;
+  border: 1px solid rgba(228, 232, 244, 0.3);
+  border-radius: 8px;
+  transform: skewX(-30deg);
+}
+
+.wire-iso-cube-side {
+  position: absolute;
+  right: -14px;
+  top: 10px;
+  width: 16px;
+  height: 54px;
+  border: 1px solid rgba(228, 232, 244, 0.22);
+  border-radius: 6px;
+  transform: skewY(-30deg);
+}
+
+.wire-iso-cube-a {
+  left: 10px;
+  top: 36px;
+}
+
+.wire-iso-cube-b {
+  left: 82px;
+  top: 12px;
+}
+
+.wire-iso-cube-c {
+  left: 96px;
+  top: 64px;
+  width: 62px;
+  height: 62px;
+}
+
+.wire-iso-cube-d {
+  left: 26px;
+  top: 4px;
+}
+
+.wire-steps-perspective {
+  position: relative;
+  width: 188px;
+  height: 138px;
+}
+
+.wire-persp-panel {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform-origin: bottom left;
+  border: 1px solid rgba(228, 232, 244, 0.32);
+  border-radius: 7px;
+}
+
+.wire-persp-panel-1 {
+  width: 116px;
+  height: 74px;
+  transform: translateX(-8%) skewY(26deg);
+}
+
+.wire-persp-panel-2 {
+  width: 104px;
+  height: 66px;
+  transform: translateX(-14%) skewY(26deg);
+  opacity: 0.9;
+}
+
+.wire-persp-panel-3 {
+  width: 92px;
+  height: 58px;
+  transform: translateX(-20%) skewY(26deg);
+  opacity: 0.82;
+}
+
+.wire-persp-panel-4 {
+  width: 80px;
+  height: 50px;
+  transform: translateX(-26%) skewY(26deg);
+  opacity: 0.74;
+}
+
+.wire-persp-panel-5 {
+  width: 68px;
+  height: 42px;
+  transform: translateX(-32%) skewY(26deg);
+  opacity: 0.66;
+}
+
+.wire-persp-panel-6 {
+  width: 56px;
+  height: 34px;
+  transform: translateX(-38%) skewY(26deg);
+  opacity: 0.58;
+}
+
+.wire-persp-panel-7 {
+  width: 44px;
+  height: 26px;
+  transform: translateX(-44%) skewY(26deg);
+  opacity: 0.5;
+}
+
+.wire-persp-panel-8 {
+  width: 32px;
+  height: 18px;
+  transform: translateX(-50%) skewY(26deg);
+  opacity: 0.42;
+}
+

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head:*)",
+      "mcp__TalkToFigma__join_channel"
+    ]
+  }
+}
