@@ -26,8 +26,3 @@ next-env.d.ts
 .pnpm-store
 .npm-cache
 PSWK coding teamexchagerate.npm-cache
-
-# images (large)
-*.png
-*.jpg
-*.jpeg
